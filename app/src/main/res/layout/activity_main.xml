@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txtTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcul de l'IMC"
+        android:textAlignment="center"
+        android:textSize="30px"
+        android:textColor="@color/purple_500" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Poids :"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/txtPoids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="poids"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Taille :"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/txtTaille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="taille"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiobtnM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mètre"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/radiobtnC"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Centimètre"
+                android:textAlignment="center" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnCalculer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculer l'IMC" />
+
+    <Button
+        android:id="@+id/btnRAZ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="remettre à zero" />
+
+</LinearLayout>
